@@ -13,9 +13,9 @@ from pygame import mixer
 import os
 
 # Cores ----------------------------------------------------------------
-preto = '#000000'
+Black = '#000000'
 Royal_blue = '#00296B'
-amarelo = '#ffd500'
+Gold = '#ffd500'
 Polynesian_blue = '#00509D'
 Marian_blue = '#003F88'
 
@@ -25,7 +25,7 @@ janela = Tk()
 janela.title("Music Player")
 janela.geometry('450x255')
 janela.iconbitmap('LogoICO.ico')
-janela.configure(background=preto)
+janela.configure(background=Black)
 janela.resizable(width=FALSE, height=FALSE)
 
 # Frames ----------------------------------------------------------------
@@ -148,7 +148,7 @@ def repeat_music():
 
 
 listbox = Listbox(frame_direita, selectmode=SINGLE, width=33,
-                height=10, font=('arial 9 bold'), bg=preto, fg=Polynesian_blue)
+                height=10, font=('arial 9 bold'), bg=Black, fg=Polynesian_blue)
 listbox.grid(row=0, column=0)
 
 s = Scrollbar(frame_direita, troughcolor=Royal_blue)
@@ -159,7 +159,7 @@ s.config(command=listbox.yview)
 
 # Configurando frame baixo -------------------------
 l_rodando = Label(frame_baixo, text='Selecione uma musica', width=70,
-                justify=LEFT, anchor='nw', font=('arial 9 bold'), bg=Royal_blue, fg=amarelo)
+                justify=LEFT, anchor='nw', font=('arial 9 bold'), bg=Royal_blue, fg=Gold)
 l_rodando.place(x=0, y=1)
 
 # Botões ----------------------------------------------------------------
@@ -217,9 +217,9 @@ musicas = os.listdir()
 
 def exibir_lista():
     listbox.delete(0, END)
-    for i in musicas:
+    musicas_mp3 = [i for i in musicas if i.endswith('.mp3')]
+    for i in musicas_mp3:
         listbox.insert(END, i)
-
 
 exibir_lista()
 
