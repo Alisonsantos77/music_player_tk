@@ -22,9 +22,23 @@ Certifique-se de ter o Python e as bibliotecas necessárias instaladas:
 - Pygame (para reprodução de áudio)
 - PIL (para manipulação de imagens)
 
-## Como Executar
 
-1. Clone este repositório:
+## Rodando projeto
 
+Clone o projeto
 ```bash
 git clone https://github.com/Alisonsantos77/music_player_tk.git
+```
+
+Instale as depêndencias
+```bash
+  pip install -r requirements.txt
+```
+
+Rodandando o projeto
+
+```bash
+  python main.py
+```
+
+    
