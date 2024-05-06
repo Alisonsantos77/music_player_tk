@@ -10,7 +10,8 @@ Um simples reprodutor de música desenvolvido em Python com interface gráfica u
 
 ## Capturas de Tela
 
-![captura1](https://github.com/Alisonsantos77/music_player_tk/assets/147265713/514e1570-445e-4b24-84fd-89a0adf42045)
+![captura1](https://github.com/Alisonsantos77/music_player_tk/assets/147265713/7b2c6482-bf7c-47e7-8eea-f6c9a6798ddd)
+
 
 ## Requisitos
 
@@ -21,9 +22,23 @@ Certifique-se de ter o Python e as bibliotecas necessárias instaladas:
 - Pygame (para reprodução de áudio)
 - PIL (para manipulação de imagens)
 
-## Como Executar
 
-1. Clone este repositório:
+## Rodando projeto
 
+Clone o projeto
 ```bash
 git clone https://github.com/Alisonsantos77/music_player_tk.git
+```
+
+Instale as depêndencias
+```bash
+  pip install -r requirements.txt
+```
+
+Rodandando o projeto
+
+```bash
+  python main.py
+```
+
+    
